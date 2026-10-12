@@ -77,7 +77,7 @@ DSH（DeepSeek Harness）Web 插件：在**底部状态栏**（composer dock）�
 ```sh
 pnpm install          # autoInstallPeers=false
 pnpm build            # 生成 lib/client.js + lib/index.js
-pnpm test             # 构建 + 14 项测试
+pnpm test             # 构建 + 33 项测试
 ```
 
 ## 安装
