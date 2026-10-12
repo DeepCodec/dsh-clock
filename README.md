@@ -1,5 +1,10 @@
 # dsh-clock
 
+[![CI](https://github.com/DeepCodec/dsh-clock/actions/workflows/ci.yml/badge.svg)](https://github.com/DeepCodec/dsh-clock/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/dsh-clock?label=npm&color=blue)](https://www.npmjs.com/package/dsh-clock)
+[![dsh compatibility](https://img.shields.io/badge/dsh-0.2.0--rc.2-blueviolet)](package.json)
+
 DSH（DeepSeek Harness）Web 插件：在**底部状态栏**（composer dock）常驻显示当前日期与时间，提供**可视化配置**。
 
 ## 效果

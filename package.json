@@ -24,6 +24,7 @@
     "@deepseek-ai/cordis": "4.0.4",
     "@deepseek-ai/dsh-client-store": "0.2.0-rc.2",
     "@deepseek-ai/dsh-client-ui-primitives": "0.2.0-rc.2",
+    "@deepseek-ai/dsh-settings": "0.2.0-rc.2",
     "@deepseek-ai/schemastery": "^3.18.2",
     "esbuild": "^0.25.0",
     "immer": "^11.1.21",
@@ -67,5 +68,24 @@
     "node": ">=22"
   },
   "license": "MIT",
-  "author": "Longshan Du <longshan.du@gmail.com>"
+  "author": "Longshan Du <longshan.du@gmail.com>",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "clock",
+    "date",
+    "time",
+    "status-bar",
+    "cordis",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeepCodec/dsh-clock.git"
+  },
+  "homepage": "https://github.com/DeepCodec/dsh-clock",
+  "bugs": {
+    "url": "https://github.com/DeepCodec/dsh-clock/issues"
+  }
 }
