@@ -9,4 +9,4 @@
 # time into the composer dock (the bottom status row).
 - insert:
     - id: dsh-clock
-      name: 'dsh-clock'
+      name: '@deepcodec/dsh-clock'

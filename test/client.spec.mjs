@@ -60,7 +60,7 @@ function makeForm(initialValue) {
 test('built client exports only apply and inject', async () => {
   await import('../lib/client.js')
   const reg = REGISTRATIONS.at(-1)
-  assert.equal(reg.id, 'dsh-clock')
+  assert.equal(reg.id, '@deepcodec/dsh-clock')
   const mod = reg.factory(globalThis.require)
   assert.deepEqual(Object.keys(mod).sort(), ['apply', 'inject'])
   assert.deepEqual(mod.inject, ['slots', 'locale', 'configForms'])

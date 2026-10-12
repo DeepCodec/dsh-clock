@@ -1,5 +1,5 @@
 {
-  "name": "dsh-clock",
+  "name": "@deepcodec/dsh-clock",
   "description": "DSH Web clock: shows the current date & time in the bottom status bar (composer dock), with user-configurable format.",
   "version": "1.0.0",
   "type": "module",
@@ -16,9 +16,13 @@
     "README.md",
     "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "node build.mjs",
-    "test": "node --test test/*.spec.mjs"
+    "test": "node --test test/*.spec.mjs",
+    "prepublishOnly": "node build.mjs && node --test test/*.spec.mjs"
   },
   "devDependencies": {
     "@deepseek-ai/cordis": "4.0.4",

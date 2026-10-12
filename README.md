@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/DeepCodec/dsh-clock/actions/workflows/ci.yml/badge.svg)](https://github.com/DeepCodec/dsh-clock/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![npm version](https://img.shields.io/npm/v/dsh-clock?label=npm&color=blue)](https://www.npmjs.com/package/dsh-clock)
+[![npm version](https://img.shields.io/npm/v/@deepcodec/dsh-clock?label=npm&color=blue)](https://www.npmjs.com/package/@deepcodec/dsh-clock)
 [![dsh compatibility](https://img.shields.io/badge/dsh-0.2.0--rc.2-blueviolet)](package.json)
 
 DSH（DeepSeek Harness）Web 插件：在**底部状态栏**（composer dock）常驻显示当前日期与时间，提供**可视化配置**。
@@ -115,11 +115,12 @@ dsh plugin --profile <name> add /path/to/dsh-clock
 发布到 npm 后（直接按包名安装）：
 
 ```sh
-dsh plugin --profile <name> add dsh-clock
+dsh plugin --profile <name> add @deepcodec/dsh-clock
 ```
 
-（或手动 `cd ~/.dsh/profiles/<name> && pnpm add github:DeepCodec/dsh-clock`，
-并在 `package.json` 的 `dsh.profile.bundles` 里追加 `dsh-clock`。）重启 DSH Desktop 生效。
+（或手动 `cd ~/.dsh/profiles/<name> && pnpm add @deepcodec/dsh-clock`，
+并在 `package.json` 的 `dsh.profile.bundles` 里追加 `@deepcodec/dsh-clock`。）
+重启 DSH Desktop 生效。
 
 ## 卸载
 

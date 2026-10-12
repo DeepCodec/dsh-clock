@@ -44,7 +44,7 @@ const client = await build({
 const body = client.outputFiles[0].text
 const wrapped = [
   "window.__ModuleLoader__.load({",
-  "  id: 'dsh-clock',",
+  "  id: '@deepcodec/dsh-clock',",
   "  factory: (require) => {",
   "    var module = { exports: {} };",
   "    var exports = module.exports;",

@@ -35,7 +35,7 @@ const seedRequire = (spec) => {
 test('built bundle materializes against the real module table', async () => {
   await import('../lib/client.js')
   const reg = REGISTRATIONS[0]
-  assert.equal(reg.id, 'dsh-clock')
+  assert.equal(reg.id, '@deepcodec/dsh-clock')
   const mod = reg.factory(seedRequire)
   assert.equal(typeof mod.apply, 'function')
   assert.deepEqual(mod.inject, ['slots', 'locale', 'configForms'])

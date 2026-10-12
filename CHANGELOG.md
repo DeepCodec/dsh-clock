@@ -12,6 +12,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   from the plugin manager's row detail page, beside the Settings → General row.
 - Repository community files: LICENSE (MIT), CONTRIBUTING, SECURITY,
   GitHub issue/PR templates, and a CI workflow (build + test on every push/PR).
+- npm publish automation: `publish.yml` workflow publishes on `v*` tags and
+  creates a GitHub Release (requires the `NPM_TOKEN` repository secret).
+
+### Changed
+
+- Published package name is now `@deepcodec/dsh-clock` (scoped): the plain
+  `dsh-clock` name was already taken on npm, so the plugin is released under
+  the `@deepcodec` scope with `publishConfig.access: public`. The bundle row,
+  module-table entry id, and install instructions are updated accordingly.
+  Before publishing, ensure the `@deepcodec` scope is owned on npm and you are
+  logged in (`npm login`).
 
 ### Fixed
 
