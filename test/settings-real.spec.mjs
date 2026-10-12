@@ -15,7 +15,7 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { Context } from '@deepseek-ai/cordis'
-import { SettingsForms } from '/tmp/dsh-src/extracted/dsh/node_modules/@deepseek-ai/dsh-settings/lib/index.js'
+import { SettingsForms } from '@deepseek-ai/dsh-settings'
 import { Config, SETTINGS_NAMESPACE, apply } from '../lib/index.js'
 
 /** The ConfigFormController wire shape the dsh-settings service needs. */
