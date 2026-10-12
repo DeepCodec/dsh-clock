@@ -1,0 +1,29 @@
+/* dsh-clock dock widget styles.
+ * Semantic --dsw-* tokens only; no literal colors. Classes carry the
+ * dsh-clock- prefix so they can never collide with shell styles. */
+
+.dsh-clock-root {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--dsw-alias-label-secondary);
+  white-space: nowrap;
+  user-select: none;
+  margin-inline: 2px;
+}
+
+.dsh-clock-date {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.dsh-clock-time {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.75;
+}
+
+.dsh-clock-sep {
+  opacity: 0.45;
+}
