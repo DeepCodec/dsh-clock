@@ -90,15 +90,35 @@ pnpm test             # 构建 + 33 项测试
 **装成依赖还不够**：插件半必须在 profile 的 `dsh.profile.bundles` 里才会加载
 （bundle 列表决定 `cordis.patch.yml` 里的 `insert` 是否生效）。
 
-- Desktop：走 **设置 → 插件**（插件市场）安装/启用；`desktop` profile 由 Electron 应用独占管理，
+- **桌面端（Desktop）**：走 **设置 → 插件**（插件市场）安装/启用；`desktop` profile 由 Electron 应用独占管理，
   命令行 `dsh --profile desktop` 会被拒绝。
-- 其他 profile：
+- **其他 profile**：
+
+从 GitHub 安装（推荐，全路径）：
 
 ```sh
-dsh plugin --profile <name> add /Users/duls/Work/clock-dsh
+dsh plugin --profile <name> add github:DeepCodec/dsh-clock
 ```
 
-（或手动 `cd ~/.dsh/profiles/<name> && pnpm add /Users/duls/Work/clock-dsh`，
+或指定 GitHub 仓库完整地址：
+
+```sh
+dsh plugin --profile <name> add https://github.com/DeepCodec/dsh-clock.git
+```
+
+本地开发调试（检出到本机后的绝对路径）：
+
+```sh
+dsh plugin --profile <name> add /path/to/dsh-clock
+```
+
+发布到 npm 后（直接按包名安装）：
+
+```sh
+dsh plugin --profile <name> add dsh-clock
+```
+
+（或手动 `cd ~/.dsh/profiles/<name> && pnpm add github:DeepCodec/dsh-clock`，
 并在 `package.json` 的 `dsh.profile.bundles` 里追加 `dsh-clock`。）重启 DSH Desktop 生效。
 
 ## 卸载
